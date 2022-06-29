@@ -1,0 +1,15 @@
+h1,h2{
+    color: #06283D;
+}
+h3{
+    color:#1363DF;
+}
+h4{
+    color:#47B5FF;
+}
+p{
+    color: black;
+}
+div.copyright>p{
+    color:#06283D;
+}

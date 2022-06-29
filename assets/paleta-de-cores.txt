@@ -1,0 +1,4 @@
+Azul principal- #06283D
+Azul Secundario - #1363DF
+Azul terciario - #47B5FF
+Azul quarternario - #DFF6FF
