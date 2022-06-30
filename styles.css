@@ -1,15 +1,91 @@
-h1,h2{
-    color: #06283D;
+h1,
+h2 {
+    color: #06283d;
 }
-h3{
-    color:#1363DF;
+h3 {
+    color: #1363df;
 }
-h4{
-    color:#47B5FF;
+h4 {
+    color: #47b5ff;
 }
-p{
+p {
     color: black;
 }
-div.copyright>p{
-    color:#06283D;
+div.copyright > p {
+    color: #06283d;
+}
+.icones-sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nome {
+    text-align: center;
+}
+.email {
+    text-align: center;
+}
+.github {
+    text-align: center;
+}
+.telefone {
+    text-align: center;
+}
+section.projetos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.title-projetos {
+    text-align: center;
+}
+section.sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+section.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header.header-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.item-menu {
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 12px;
+}
+.linha-servicos-1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+h3.title-servico {
+    text-align: center;
+}
+h2.title-servicos {
+    text-align: center;
+}
+h3.title-projeto {
+    text-align: center;
+}
+section.skills {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+h2.title-skills {
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+    border-top: 1px solid black;
 }
