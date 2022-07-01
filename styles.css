@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 h1,
 h2 {
     color: #06283d;
-    font-size:32px;
+    font-size: 32px;
 }
 h3 {
     color: #1363df;
@@ -26,8 +26,8 @@ header.header-portfolio {
     flex-direction: row;
     transition: 0.7s;
 }
-.item-menu:hover{
-    color:#47b5ff;
+.item-menu:hover {
+    color: #47b5ff;
     transform: translateY(-10px);
 }
 h2.title-portfolio {
@@ -45,9 +45,9 @@ section.cabecalho {
     align-items: center;
 }
 section.cabecalho {
-    background-image: url('./assets/images/wave.svg');
+    background-image: url("./assets/images/wave.svg");
     background-size: cover;
-    margin-top:50px;
+    margin-top: 50px;
 }
 .box-cabecalho {
     display: flex;
@@ -65,22 +65,24 @@ img.foto-perfil {
     border: solid 2px #06283d;
 }
 hr {
-    color: #06283D;
+    color: #06283d;
     border-width: 1.5px;
     width: 390px;
-    background: #06283D;
+    background: #06283d;
     border-style: solid;
 }
 h3.h3-apresentacao {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
+    font-size: 22px;
+    font-weight: 900;
 }
 .botoes-sobre-mim {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-a.btn-info{
+a.btn-info {
     position: relative;
     background: white;
     color: var(--clr);
@@ -91,10 +93,10 @@ a.btn-info{
     transition: 0.5s;
     border: solid 1.5px var(--clr);
 }
-a.btn-info:hover{
+a.btn-info:hover {
     background: var(--clr);
     letter-spacing: 0.08em;
-    color:white;
+    color: white;
     box-shadow: 0 0 35px var(--clr);
 }
 
@@ -161,11 +163,11 @@ h4.tecnologias-projeto {
     text-align: center;
 }
 .box-projeto {
-    background: #DFF6FF;
+    background: #dff6ff;
     padding: 0px 0px 10px 0px;
     width: 430px;
     margin-top: 30px;
-    border: solid 2px #06283D;
+    border: solid 2px #06283d;
     border-radius: 0px 0px 10px 10px;
 }
 figure.figure-projeto {
@@ -173,7 +175,7 @@ figure.figure-projeto {
     padding: 0;
 }
 .box-servico {
-    background: #DFF6FF;
+    background: #dff6ff;
     border: solid 2px #06283d;
     margin: 15px;
     border-radius: 10px;
@@ -200,7 +202,7 @@ section.skills {
     margin-top: 40px;
 }
 .skill {
-    background: #DFF6FF;
+    background: #dff6ff;
     border: solid 2px #06283d;
     margin: 5px;
     border-radius: 10px;
@@ -215,124 +217,163 @@ h2.title-skills {
 div.copyright > p {
     color: #06283d;
 }
-.icones-sobre-mim .email path{
+.icones-sobre-mim .email path {
     fill: transparent;
     stroke-width: 10;
     stroke: #06283d;
 }
-.icones-sobre-mim .github path{
+.icones-sobre-mim .github path {
     fill: transparent;
     stroke-width: 10;
     stroke: black;
 }
-.icones-sobre-mim .telefone path{
+.icones-sobre-mim .telefone path {
     fill: transparent;
     stroke-width: 10;
-    stroke:  #34af23;
+    stroke: #34af23;
 }
-.icones-sobre-mim .linkedin path{
+.icones-sobre-mim .linkedin path {
     fill: transparent;
     stroke-width: 10;
-    stroke:  #06283d;
+    stroke: #06283d;
 }
-.icones-sobre-mim .email path{
+.icones-sobre-mim .email path {
     stroke-dasharray: 1700;
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .email:hover path {
-    animation: animate-email 2s linear forwards
+    animation: animate-email 2s linear forwards;
 }
 
 @keyframes animate-email {
-    0%{
-        stroke-dashoffset:0;
+    0% {
+        stroke-dashoffset: 0;
     }
-    40%{
+    40% {
         stroke-dashoffset: 1700;
     }
-    80%{
+    80% {
         stroke-dashoffset: 3400;
         fill: transparent;
-        
     }
-    100%{
+    100% {
         stroke-dashoffset: 3400;
         fill: #06283d;
     }
 }
 
-.icones-sobre-mim .github path{
+.icones-sobre-mim .github path {
     stroke-dasharray: 3000;
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .github:hover path {
-    animation: animate-github 2s linear forwards
+    animation: animate-github 2s linear forwards;
 }
 
 @keyframes animate-github {
-    0%{
-        stroke-dashoffset:0;
+    0% {
+        stroke-dashoffset: 0;
     }
-    40%{
+    40% {
         stroke-dashoffset: 3000;
     }
-    80%{
+    80% {
         stroke-dashoffset: 6000;
         fill: transparent;
-        
     }
-    100%{
+    100% {
         stroke-dashoffset: 6000;
         fill: black;
     }
 }
-.icones-sobre-mim .telefone path{
+.icones-sobre-mim .telefone path {
     stroke-dasharray: 2000;
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .telefone:hover path {
-    animation: animate-telefone 2s linear forwards
+    animation: animate-telefone 2s linear forwards;
 }
 
 @keyframes animate-telefone {
-    0%{
-        stroke-dashoffset:0;
+    0% {
+        stroke-dashoffset: 0;
     }
-    40%{
+    40% {
         stroke-dashoffset: 2000;
     }
-    80%{
+    80% {
         stroke-dashoffset: 4000;
         fill: transparent;
-        
     }
-    100%{
+    100% {
         stroke-dashoffset: 4000;
-        fill:  #34af23;
+        fill: #34af23;
     }
 }
-.icones-sobre-mim .linkedin path{
+.icones-sobre-mim .linkedin path {
     stroke-dasharray: 1800;
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .linkedin:hover path {
-    animation: animate-linkedin 2s linear forwards
+    animation: animate-linkedin 2s linear forwards;
 }
 
 @keyframes animate-linkedin {
-    0%{
-        stroke-dashoffset:0;
+    0% {
+        stroke-dashoffset: 0;
     }
-    40%{
+    40% {
         stroke-dashoffset: 1800;
     }
-    80%{
+    80% {
         stroke-dashoffset: 3600;
         fill: transparent;
-        
     }
-    100%{
+    100% {
         stroke-dashoffset: 3600;
         fill: #06283d;
     }
+}
+
+.teclas {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+span.tecla {
+    position: relative;
+    display: inline-block;
+    padding: 8px 15px;
+    width: 70px;
+    height: 80px;
+    background: linear-gradient(180deg, #282828, #202020);
+    border-radius: 10px;
+    box-shadow: inset -8px 0 8px rbga(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+span.tecla:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #232323, #4a4a4a);
+    border-radius: 10px;
+    box-shadow: -10px -10px -10px 10px rgba(255, 255, 255, 0.25),
+        10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: solid 1px #0004;
+    border-bottom: solid 1px #0004;
+    border-top: solid 1px #0009;
+}
+
+span.tecla i {
+    position: relative;
+    color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
