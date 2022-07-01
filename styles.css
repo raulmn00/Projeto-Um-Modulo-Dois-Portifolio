@@ -20,15 +20,23 @@ p {
 header.header-portfolio {
     background: #06283d;
 }
-a.item-menu {
-    color: #DFF6FF;
+.item-menu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    transition: 0.7s;
+}
+.item-menu:hover{
+    color:#47b5ff;
+    transform: translateY(-10px);
 }
 h2.title-portfolio {
-    color: #DFF6FF;
+    color: white;
     margin-left: 30px;
 }
 nav.menu-portfolio {
     margin-right: 30px;
+    display: flex;
 }
 section.cabecalho {
     display: flex;
@@ -49,7 +57,7 @@ section.cabecalho {
 .box-cabecalho {
     border: solid 2px #06283d;
     background: #dff6ff;
-    padding: 15px 0px 15px 0px;
+    padding: 20px;
     border-radius: 15px;
 }
 img.foto-perfil {
@@ -58,7 +66,7 @@ img.foto-perfil {
 }
 hr {
     color: #06283D;
-    border-width: 1px;
+    border-width: 1.5px;
     width: 390px;
     background: #06283D;
     border-style: solid;
@@ -68,27 +76,28 @@ h3.h3-apresentacao {
     margin-top: 10px;
 }
 .botoes-sobre-mim {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-.btn {
-    border: 2px solid green;
-    background-color: white;
-    color: black;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 7px;
-  }
-  .info {
-    border-color: #06283d;
-    color: #1363DF;
-  }
-  
-  .info:hover {
-    background: #06283d;
-    color: #DFF6FF;
-  }
+
+a.btn-info{
+    position: relative;
+    background: white;
+    color: var(--clr);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 10px;
+    transition: 0.5s;
+    border: solid 1.5px var(--clr);
+}
+a.btn-info:hover{
+    background: var(--clr);
+    letter-spacing: 0.08em;
+    color:white;
+    box-shadow: 0 0 35px var(--clr);
+}
+
 h2.title-apresentacao {
     margin: 0;
     padding: 0;
@@ -135,6 +144,7 @@ section.sobre-mim {
 }
 .telefone {
     text-align: center;
+    margin-right: 10px;
 }
 section.projetos {
     display: flex;
@@ -220,6 +230,11 @@ div.copyright > p {
     stroke-width: 10;
     stroke:  #34af23;
 }
+.icones-sobre-mim .linkedin path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke:  #06283d;
+}
 .icones-sobre-mim .email path{
     stroke-dasharray: 1700;
     stroke-dashoffset: 0;
@@ -294,5 +309,30 @@ div.copyright > p {
     100%{
         stroke-dashoffset: 4000;
         fill:  #34af23;
+    }
+}
+.icones-sobre-mim .linkedin path{
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 0;
+}
+.icones-sobre-mim .linkedin:hover path {
+    animation: animate-linkedin 2s linear forwards
+}
+
+@keyframes animate-linkedin {
+    0%{
+        stroke-dashoffset:0;
+    }
+    40%{
+        stroke-dashoffset: 1800;
+    }
+    80%{
+        stroke-dashoffset: 3600;
+        fill: transparent;
+        
+    }
+    100%{
+        stroke-dashoffset: 3600;
+        fill: #06283d;
     }
 }
