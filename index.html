@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <script src="index.js"></script>
         <title>Projeto Um - Portfólio</title>
     </head>
 
@@ -29,9 +30,7 @@
                             alt="foto-perfil"
                         />
                     </figure>
-                    <h2 class="title-apresentacao">
-                        OLÁ, EU ME CHAMO<br />
-                    </h2>
+                    <h2 class="title-apresentacao">OLÁ, EU ME CHAMO<br /></h2>
                     <div class="teclas">
                         <span class="tecla"><i>R</i></span>
                         <span class="tecla"><i>A</i></span>
@@ -105,33 +104,23 @@
             </section>
             <section class="sobre-mim">
                 <h1 class="title-sobre-mim">SOBRE MIM</h1>
-                <div class="texto-sobre-mim">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ut doloribus adipisci nobis dolor id, magni beatae odio
-                        corporis eum iure alias nisi, voluptatum enim ipsum
-                        minus debitis soluta animi ipsam. Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Natus inventore
-                        assumenda, alias, veritatis modi quidem sint corrupti
-                        similique officia facilis sapiente laborum et, debitis
-                        doloribus laboriosam excepturi quae perspiciatis soluta?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Numquam earum ducimus expedita architecto, est enim
-                        voluptatem delectus sed eum deleniti a perspiciatis,
-                        voluptas hic fuga labore quae? Eum, minima. Sint? Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Ut
-                        doloribus adipisci nobis dolor id, magni beatae odio
-                        corporis eum iure alias nisi, voluptatum enim ipsum
-                        minus debitis soluta animi ipsam. Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Natus inventore
-                        assumenda, alias, veritatis modi quidem sint corrupti
-                        similique officia facilis sapiente laborum et, debitis
-                        doloribus laboriosam excepturi quae perspiciatis soluta?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Numquam earum ducimus expedita architecto, est enim
-                        voluptatem delectus sed eum deleniti a perspiciatis,
-                        voluptas hic fuga labore quae? Eum, minima. Sint?
-                    </p>
+                <div class="box-sobre-mim">
+                    <div class="text-sobre-mim">
+                        <div class="texto-div">
+                            <h2>Raul Mariaci Neto</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Vel architecto ipsum
+                                doloremque, cumque voluptatibus quibusdam
+                                cupiditate. Fugiat ad, repellendus magni minima
+                                unde ab debitis necessitatibus, sed voluptas
+                                nulla commodi quae nostrum? Dolore corporis,
+                                quis debitis asperiores repellat, optio magnam
+                                aspernatur magni itaque, impedit beatae. Qui,
+                                voluptate veniam? Sequi, accusantium in.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <div class="title-projetos">
@@ -139,50 +128,6 @@
             </div>
             <section class="projetos">
                 <div class="projetos-linha-1">
-                    <div class="box-projeto">
-                        <figure class="figure-projeto">
-                            <img
-                                width="430"
-                                src="./assets/images/projeto-generico.png"
-                                alt=""
-                            />
-                        </figure>
-                        <h3 class="title-projeto">Título do Projeto</h3>
-
-                        <h4 class="tecnologias-projeto">
-                            Tecnologias Usadas no Projeto: HTML5, CSS3, JS
-                        </h4>
-                    </div>
-                    <div class="box-projeto">
-                        <figure class="figure-projeto">
-                            <img
-                                width="430"
-                                src="./assets/images/projeto-generico.png"
-                                alt=""
-                            />
-                        </figure>
-                        <h3 class="title-projeto">Título do Projeto</h3>
-
-                        <h4 class="tecnologias-projeto">
-                            Tecnologias Usadas no Projeto: HTML5, CSS3, JS
-                        </h4>
-                    </div>
-                    <div class="box-projeto">
-                        <figure class="figure-projeto">
-                            <img
-                                width="430"
-                                src="./assets/images/projeto-generico.png"
-                                alt=""
-                            />
-                        </figure>
-                        <h3 class="title-projeto">Título do Projeto</h3>
-
-                        <h4 class="tecnologias-projeto">
-                            Tecnologias Usadas no Projeto: HTML5, CSS3, JS
-                        </h4>
-                    </div>
-                </div>
-                <div class="projetos-linha-2">
                     <div class="box-projeto">
                         <figure class="figure-projeto">
                             <img
@@ -269,34 +214,155 @@
                     </div>
                 </div>
             </section>
-            <h2 class="title-skills">MINHAS SKILLS</h2>
-            <section class="skills">
-                <div class="skill">
-                    <figure>
-                        <img src="./assets/images/icon-css3.png" alt="" />
-                    </figure>
+            <h2 class="title-skills">MINHAS SKILLS<br> (clique nos cards)</h2>
+            <!-- The grid: three columns -->
+            <div class="row">
+                <div
+                    class="column"
+                    onclick="openTab('html');"
+                    style="background: #dff6ff"
+                >
+                    <img
+                        src="./assets/images/icon-html5.png"
+                        alt=""
+                        srcset=""
+                    />
                 </div>
-                <div class="skill">
-                    <figure>
-                        <img src="./assets/images/icon-html5.png" alt="" />
-                    </figure>
+                <div
+                    class="column"
+                    onclick="openTab('css');"
+                    style="background: #dff6ff"
+                >
+                    <img src="./assets/images/icon-css3.png" alt="" srcset="" />
                 </div>
-                <div class="skill">
-                    <figure>
-                        <img src="./assets/images/icon-js.png" alt="" />
-                    </figure>
+                <div
+                    class="column"
+                    onclick="openTab('js');"
+                    style="background: #dff6ff"
+                >
+                    <img src="./assets/images/icon-js.png" alt="" srcset="" />
                 </div>
-                <div class="skill">
-                    <figure>
-                        <img src="./assets/images/icon-node-js.png" alt="" />
-                    </figure>
+                <div
+                    class="column"
+                    onclick="openTab('node');"
+                    style="background: #dff6ff"
+                >
+                    <img
+                        src="./assets/images/icon-node-js.png"
+                        alt=""
+                        srcset=""
+                    />
                 </div>
-                <div class="skill">
-                    <figure>
-                        <img src="./assets/images/icon-react-js.png" alt="" />
-                    </figure>
+                <div
+                    class="column"
+                    onclick="openTab('react');"
+                    style="background: #dff6ff"
+                >
+                    <img
+                        src="./assets/images/icon-react-js.png"
+                        alt=""
+                        srcset=""
+                    />
                 </div>
-            </section>
+            </div>
+
+            <!-- The expanding grid (hidden by default) -->
+            <div
+                id="html"
+                class="containerTab"
+                style="display: none; background: #06283d"
+            >
+                <!-- If you want the ability to close the container, add a close button -->
+                <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="closebtn"
+                    >x</span
+                >
+                <h2>HTML 5</h2>
+                <p>
+                    HTML5 é uma linguagem de marcação para a World Wide Web e é
+                    uma tecnologia chave da Internet, originalmente proposto por
+                    Opera Software. É a quinta versão da linguagem HTML
+                </p>
+            </div>
+
+            <div
+                id="css"
+                class="containerTab"
+                style="display: none; background: #06283d"
+            >
+                <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="closebtn"
+                    >x</span
+                >
+                <h2>CSS 3</h2>
+                <p>
+                    CSS3 é a terceira mais nova versão das famosas Cascading
+                    Style Sheets, pela qual se define estilos para um projeto
+                    web. Com efeitos de transição, imagem, imagem de
+                    fundo/background e outros, pode-se criar estilos únicos para
+                    seus projetos web, alterando diversos aspectos de design no
+                    layout da página.
+                </p>
+            </div>
+
+            <div
+                id="js"
+                class="containerTab"
+                style="display: none; background: #06283d"
+            >
+                <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="closebtn"
+                    >x</span
+                >
+                <h2>JAVASCRIPT</h2>
+                <p>
+                    JavaScript é uma linguagem de programação interpretada
+                    estruturada, de script em alto nível com tipagem dinâmica
+                    fraca e multiparadigma. Juntamente com HTML e CSS, o
+                    JavaScript é uma das três principais tecnologias da World
+                    Wide Web
+                </p>
+            </div>
+            <div
+                id="node"
+                class="containerTab"
+                style="display: none; background: #06283d"
+            >
+                <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="closebtn"
+                    >x</span
+                >
+                <h2>NODE JS</h2>
+                <p>
+                    Node.js é um software de código aberto, multiplataforma,
+                    baseado no interpretador V8 do Google e que permite a
+                    execução de códigos JavaScript fora de um navegador web.
+                </p>
+            </div>
+            <div
+                id="react"
+                class="containerTab"
+                style="display: none; background: #06283d"
+            >
+                <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="closebtn"
+                    >x</span
+                >
+                <h2>REACT</h2>
+                <p>
+                    O React é uma biblioteca JavaScript de código aberto com
+                    foco em criar interfaces de usuário em páginas web. É
+                    mantido pelo Facebook, Instagram, outras empresas e uma
+                    comunidade de desenvolvedores individuais. É utilizado nos
+                    sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek,
+                    HelloSign, Walmart e outros.
+                </p>
+            </div>
         </main>
         <footer>
             <div class="copyright">

@@ -2,6 +2,8 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 h1,
 h2 {
@@ -162,17 +164,68 @@ h4.tecnologias-projeto {
 .title-projetos {
     text-align: center;
 }
-.box-projeto {
-    background: #dff6ff;
-    padding: 0px 0px 10px 0px;
-    width: 430px;
-    margin-top: 30px;
-    border: solid 2px #06283d;
-    border-radius: 0px 0px 10px 10px;
+.box-sobre-mim {
+    width: 800px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    transition: 0.5s;
 }
-figure.figure-projeto {
-    margin: 0;
-    padding: 0;
+
+.box-sobre-mim::before {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-top: solid 20px #06283d;
+    border-left: solid 20px #06283d;
+    box-sizing: border-box;
+}
+.box-sobre-mim::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-bottom: solid 20px #06283d;
+    border-right: solid 20px #06283d;
+    box-sizing: border-box;
+}
+.text-sobre-mim {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    background: #262626;
+    width: calc(100% + 60px);
+    height: calc(100% - 60px);
+    transition: 0.5s;
+}
+
+.text-sobre-mim .texto-div {
+    padding: 40px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 3;
+}
+.text-sobre-mim .texto-div h2 {
+    color: white;
+    margin: 0 0 20px;
+}
+.text-sobre-mim .texto-div p {
+    color: white;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+.box-sobre-mim:hover .text-sobre-mim {
+    transform: rotateY(30deg) skewY(-5deg);
+}
+.box-sobre-mim:hover {
+    transform: rotateY(-30deg) skewY(5deg);
 }
 .box-servico {
     background: #dff6ff;
@@ -194,19 +247,7 @@ h2.title-servicos {
     text-align: center;
 }
 
-section.skills {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-.skill {
-    background: #dff6ff;
-    border: solid 2px #06283d;
-    margin: 5px;
-    border-radius: 10px;
-}
+
 h2.title-skills {
     text-align: center;
 }
@@ -242,7 +283,7 @@ div.copyright > p {
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .email:hover path {
-    animation: animate-email 2s linear forwards;
+    animation: animate-email 1.2s linear forwards;
 }
 
 @keyframes animate-email {
@@ -267,7 +308,7 @@ div.copyright > p {
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .github:hover path {
-    animation: animate-github 2s linear forwards;
+    animation: animate-github 1.2s linear forwards;
 }
 
 @keyframes animate-github {
@@ -291,7 +332,7 @@ div.copyright > p {
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .telefone:hover path {
-    animation: animate-telefone 2s linear forwards;
+    animation: animate-telefone 1.2s linear forwards;
 }
 
 @keyframes animate-telefone {
@@ -315,7 +356,7 @@ div.copyright > p {
     stroke-dashoffset: 0;
 }
 .icones-sobre-mim .linkedin:hover path {
-    animation: animate-linkedin 2s linear forwards;
+    animation: animate-linkedin 1.2s linear forwards;
 }
 
 @keyframes animate-linkedin {
@@ -344,7 +385,7 @@ span.tecla {
     position: relative;
     display: inline-block;
     padding: 8px 15px;
-    width: 70px;
+    width: 67px;
     height: 80px;
     background: linear-gradient(180deg, #282828, #202020);
     border-radius: 10px;
@@ -377,3 +418,48 @@ span.tecla i {
     text-transform: uppercase;
     font-size: 1.5em;
 }
+.projetos-linha-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  .containerTab h2{
+    color: white;
+  }
+  .containerTab p{
+    color: white;
+    font-size: 18px;
+  }
+  .row {
+    display: flex;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
