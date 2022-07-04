@@ -88,8 +88,6 @@ section.cabecalho {
     align-items: center;
 }
 section.cabecalho {
-    background-image: url("/assets/images/wave.svg");
-    background-size: cover;
     margin-top: 50px;
 }
 .box-cabecalho {
