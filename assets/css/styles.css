@@ -190,7 +190,7 @@ section.sobre-mim {
 }
 section.projetos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 h3.title-projeto {
@@ -569,5 +569,11 @@ span.tecla i {
     .box-projeto {
         padding: 0;
         margin: 0;
+    }
+    .box-cabecalho {
+        border: solid 2px #06283d;
+        background: #dff6ff;
+        padding: 10px;
+        border-radius: 15px;
     }
   }
