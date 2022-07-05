@@ -566,4 +566,8 @@ span.tecla i {
             10px 20px 25px rgba(0, 0, 0, 0.4);
         overflow: hidden;
     }
+    .box-projeto {
+        padding: 0;
+        margin: 0;
+    }
   }
