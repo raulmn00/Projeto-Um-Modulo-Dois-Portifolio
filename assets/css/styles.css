@@ -528,11 +528,17 @@ span.tecla i {
         transition: 0.7s;
     }
     .box-sobre-mim {
-        width: 450px;
-        height: 480px;
+        width: 300px;
+        height: 500px;
         transform-style: preserve-3d;
         perspective: 2000px;
         transition: 0.5s;
+    }
+    .text-sobre-mim .texto-div {
+        padding: 50px 50px 0px 20px;
+        box-sizing: border-box;
+        text-align: center;
+        z-index: 3;
     }
     .projetos-linha-1 {
         display: flex;
@@ -546,5 +552,18 @@ span.tecla i {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    span.tecla {
+        position: relative;
+        display: inline-block;
+        padding: 8px 15px;
+        width: 50px;
+        height: 65px;
+        background: linear-gradient(180deg, #282828, #202020);
+        border-radius: 10px;
+        box-shadow: inset -8px 0 8px rbga(0, 0, 0, 0.15),
+            inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+            10px 20px 25px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
     }
   }
