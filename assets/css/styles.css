@@ -209,7 +209,7 @@ h4.tecnologias-projeto {
 }
 .box-sobre-mim {
     width: 800px;
-    height: 400px;
+    height: 550px;
     transform-style: preserve-3d;
     perspective: 2000px;
     transition: 0.5s;
@@ -542,13 +542,13 @@ span.tecla i {
     }
     .box-sobre-mim {
         width: 300px;
-        height: 500px;
+        height: 1100px;
         transform-style: preserve-3d;
         perspective: 2000px;
         transition: 0.5s;
     }
     .text-sobre-mim .texto-div {
-        padding: 50px 50px 0px 20px;
+        padding: 50px 60px 0px 20px;
         box-sizing: border-box;
         text-align: center;
         z-index: 3;
