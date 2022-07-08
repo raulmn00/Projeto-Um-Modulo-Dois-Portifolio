@@ -4,6 +4,9 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+main{
+    width: 100%;
+}
 body,
 html {
     width: 100%;
@@ -460,9 +463,10 @@ span.tecla i {
 }
 .projetos-linha-1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 /* The grid: Three equal columns that floats next to each other */
 .column {
@@ -598,5 +602,15 @@ span.tecla i {
         font-size: 24px;
         font-weight: 900;
         text-align: center;
+    }
+    ul.menu-portfolio li.li-menu-portfolio a.a-menu-portfolio {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+        transition: 0.5s;
     }
 }
